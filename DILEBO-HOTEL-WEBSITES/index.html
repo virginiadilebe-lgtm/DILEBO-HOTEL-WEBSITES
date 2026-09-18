@@ -3,115 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilebo Hotel - Polokwane</title>
+    <title>Dilebo Hotel | Luxury Stay in Polokwane</title>
+    <meta name="description" content="Dilebo Hotel offers elegant rooms, warm hospitality, and a comfortable stay in the heart of Polokwane, Limpopo.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Dilebo Hotel</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="rooms.html">Rooms</a> | 
-            <a href="bookings.html">Book Now</a> | 
-            <a href="about.html">About</a> | 
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Dilebo Hotel brand">
+                <span class="brand-mark">D</span>
+                <div>
+                    <p class="eyebrow">Polokwane, Limpopo</p>
+                    <h1>Dilebo Hotel</h1>
+                </div>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="bookings.html">Book Now</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Welcome to Dilebo Hotel</h2>
-        <img src="images/hotel.jpg" alt="Dilebo Hotel Exterior" width="100%">
-        <p>Your home away from home in the heart of Polokwane, Limpopo.</p>
-        <p>Experience comfort, luxury, and true African hospitality. We offer clean rooms, free WiFi, and 24-hour service to make your stay unforgettable.</p>
-        <a href="bookings.html"><button>Book Your Stay Today</button></a>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Your home away from home</p>
+                    <h2>Welcome to Dilebo Hotel</h2>
+                    <p class="lead">Experience comfort, luxury, and true African hospitality in the heart of Polokwane. Whether you are visiting for business or leisure, our team makes every stay memorable.</p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="bookings.html">Book Your Stay</a>
+                        <a class="btn btn-secondary" href="rooms.html">Explore Rooms</a>
+                    </div>
+
+                    <ul class="stats" aria-label="Hotel highlights">
+                        <li>
+                            <strong>24/7</strong>
+                            <span>Front desk</span>
+                        </li>
+                        <li>
+                            <strong>Free</strong>
+                            <span>WiFi</span>
+                        </li>
+                        <li>
+                            <strong>4.9/5</strong>
+                            <span>Guest rating</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="images/hotel.jpg" alt="Dilebo Hotel exterior in Polokwane">
+                </div>
+            </div>
+        </section>
+
+        <section class="features section-spacing">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Why choose us</p>
+                    <h3>Comfort designed for every guest</h3>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="icon">✓</div>
+                        <h4>Elegant Rooms</h4>
+                        <p>Modern rooms with cozy furniture, clean finishes, and peaceful surroundings.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="icon">⚡</div>
+                        <h4>Fast WiFi</h4>
+                        <p>Stay connected with reliable internet for work, streaming, and communication.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="icon">🛎️</div>
+                        <h4>24-Hour Service</h4>
+                        <p>Our team is ready around the clock to support you before, during, and after your stay.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="room-preview section-spacing">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Stay options</p>
+                    <h3>Rooms that suit your travel style</h3>
+                </div>
+
+                <div class="room-grid">
+                    <article class="room-card">
+                        <img src="images/room.jpg" alt="Standard room at Dilebo Hotel">
+                        <div class="room-content">
+                            <h4>Standard Room</h4>
+                            <p class="price">From R650/night</p>
+                            <ul>
+                                <li>1 double bed</li>
+                                <li>Ensuite bathroom</li>
+                                <li>Tea and coffee station</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="room-card">
+                        <img src="images/room.jpg" alt="Deluxe room at Dilebo Hotel">
+                        <div class="room-content">
+                            <h4>Deluxe Room</h4>
+                            <p class="price">From R950/night</p>
+                            <ul>
+                                <li>Queen bed</li>
+                                <li>City view</li>
+                                <li>Mini fridge</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="room-card">
+                        <img src="images/room.jpg" alt="Family suite at Dilebo Hotel">
+                        <div class="room-content">
+                            <h4>Family Suite</h4>
+                            <p class="price">From R1450/night</p>
+                            <ul>
+                                <li>2 queen beds</li>
+                                <li>Kitchenette</li>
+                                <li>Comfortable for families</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner section-spacing">
+            <div class="container cta-box">
+                <div>
+                    <p class="eyebrow">Ready to check in?</p>
+                    <h3>Make your next stay in Polokwane unforgettable.</h3>
+                </div>
+                <a class="btn btn-primary" href="bookings.html">Reserve Now</a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 Dilebo Hotel | 123 Main Street, Polokwane | Tel: 015 123 4567 | Email: info@dilebohotel.co.za</p>
-    </footer>
-</body>
-</html>
-
-<header>
-    <h1>Dilebo Hotel</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="rooms.html">Rooms</a> |
-        <a href="bookings.html">Book Now</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-
-<!-- ...existing code... -->
-    <header>
-        <h1>Dilebo Hotel</h1>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="bookings.html">Book Now</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-<!-- ...existing code... -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Defines the character encoding for the page -->
-    <meta charset="UTF-8">
-
-    <!-- Makes the website responsive on different screen sizes -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Sets the browser tab title -->
-    <title>Dilebo Hotel - Polokwane</title>
-
-    <!-- Links this page to the external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Website header containing the hotel name and navigation menu -->
-    <header>
-        <h1>Dilebo Hotel</h1>
-
-        <!-- Main navigation links to the website pages -->
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="bookings.html">Book Now</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Main content of the hotel's home page -->
-    <main>
-        <!-- Main welcome heading -->
-        <h2>Welcome to Dilebo Hotel</h2>
-
-        <!-- Displays an image of the hotel -->
-        <img src="images/hotel.jpg" alt="Dilebo Hotel Exterior" width="100%">
-
-        <!-- Introduces the hotel's location and services -->
-        <p>Your home away from home in the heart of Polokwane, Limpopo.</p>
-        <p>
-            Experience comfort, luxury, and true African hospitality.
-            We offer clean rooms, free WiFi, and 24-hour service to make
-            your stay unforgettable.
-        </p>
-
-        <!-- Link styled as a button that takes visitors to the booking page -->
-        <a href="bookings.html">
-            <button type="button">Book Your Stay Today</button>
-        </a>
-    </main>
-
-    <!-- Footer containing copyright and contact information -->
-    <footer>
-        <p>
-            © 2026 Dilebo Hotel | 123 Main Street, Polokwane |
-            Tel: 015 123 4567 | Email: info@dilebohotel.co.za
-        </p>
     </footer>
 </body>
 </html>

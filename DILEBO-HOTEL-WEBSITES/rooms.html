@@ -4,49 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooms & Rates - Dilebo Hotel</title>
+    <meta name="description" content="Explore the rooms and rates at Dilebo Hotel in Polokwane, Limpopo.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Dilebo Hotel</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="rooms.html">Rooms</a> | 
-            <a href="bookings.html">Book Now</a> | 
-            <a href="about.html">About</a> | 
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Dilebo Hotel brand">
+                <span class="brand-mark">D</span>
+                <div>
+                    <p class="eyebrow">Polokwane, Limpopo</p>
+                    <h1>Dilebo Hotel</h1>
+                </div>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="rooms.html" class="active">Rooms</a>
+                <a href="bookings.html">Book Now</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Our Rooms</h2>
-        <p>Choose the perfect room for your stay in Polokwane. All rooms include free WiFi, DSTV, air conditioning, and daily housekeeping.</p>
-
-        <section>
-            <h3>Standard Room</h3>
-            <img src="images/room.jpg" alt="Standard Room" width="400">
-            <p><strong>Price:</strong> R650 per night</p>
-            <p><strong>Includes:</strong> 1 Double Bed, Ensuite Bathroom, Tea/Coffee Station</p>
-            <p>Perfect for solo travelers and business guests.</p>
+    <main class="page-shell">
+        <section class="container page-hero">
+            <p class="eyebrow">Stay options</p>
+            <h2>Rooms designed for rest and renewal</h2>
+            <p class="page-intro">Choose the perfect room for your stay in Polokwane. Every room combines comfort, convenience, and warm hospitality with the essentials you need for a memorable visit.</p>
         </section>
 
-        <section>
-            <h3>Deluxe Room</h3>
-            <img src="images/room.jpg" alt="Deluxe Room" width="400">
-            <p><strong>Price:</strong> R950 per night</p>
-            <p><strong>Includes:</strong> 1 Queen Bed, Lounge Area, Mini Fridge, City View</p>
-            <p>Ideal for couples looking for extra comfort.</p>
+        <section class="container room-detail-grid">
+            <article class="room-detail-card">
+                <img src="images/room.jpg" alt="Standard room at Dilebo Hotel">
+                <div class="room-detail-content">
+                    <h3>Standard Room</h3>
+                    <p class="price">From R650 per night</p>
+                    <ul class="feature-list">
+                        <li>1 double bed</li>
+                        <li>Ensuite bathroom</li>
+                        <li>Tea and coffee station</li>
+                        <li>Air conditioning</li>
+                    </ul>
+                    <p>Perfect for solo travellers and business guests needing a calm, practical stay.</p>
+                </div>
+            </article>
+
+            <article class="room-detail-card">
+                <img src="images/room.jpg" alt="Deluxe room at Dilebo Hotel">
+                <div class="room-detail-content">
+                    <h3>Deluxe Room</h3>
+                    <p class="price">From R950 per night</p>
+                    <ul class="feature-list">
+                        <li>Queen bed</li>
+                        <li>Mini fridge</li>
+                        <li>City view</li>
+                        <li>Extra lounge seating</li>
+                    </ul>
+                    <p>Ideal for couples who want a little more space, comfort, and style during their stay.</p>
+                </div>
+            </article>
+
+            <article class="room-detail-card">
+                <img src="images/room.jpg" alt="Family suite at Dilebo Hotel">
+                <div class="room-detail-content">
+                    <h3>Family Suite</h3>
+                    <p class="price">From R1450 per night</p>
+                    <ul class="feature-list">
+                        <li>2 queen beds</li>
+                        <li>Kitchenette</li>
+                        <li>Comfortable seating area</li>
+                        <li>Ideal for up to 4 guests</li>
+                    </ul>
+                    <p>Best suited for families visiting Polokwane and looking for a spacious, home-like stay.</p>
+                </div>
+            </article>
         </section>
 
-        <section>
-            <h3>Family Suite</h3>
-            <img src="images/room.jpg" alt="Family Suite" width="400">
-            <p><strong>Price:</strong> R1450 per night</p>
-            <p><strong>Includes:</strong> 2 Queen Beds, Kitchenette, Seating Area, Fits 4 Guests</p>
-            <p>Best for families visiting Polokwane.</p>
+        <section class="container booking-cta-box">
+            <div>
+                <p class="eyebrow">Need a reservation?</p>
+                <h3>Book your preferred room today.</h3>
+            </div>
+            <a class="btn btn-primary" href="bookings.html">Book a Room</a>
         </section>
-
-        <a href="bookings.html"><button>Book a Room Now</button></a>
     </main>
 
     <footer>
@@ -54,49 +96,3 @@
     </footer>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Defines the character encoding used by the webpage -->
-    <meta charset="UTF-8">
-
-    <!-- Makes the website responsive on different devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Sets the title displayed in the browser tab -->
-    <title>Rooms & Rates - Dilebo Hotel</title>
-
-    <!-- Links the page to the external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header containing the hotel name and navigation menu -->
-    <header>
-        <h1>Dilebo Hotel</h1>
-
-        <!-- Navigation links to the other website pages -->
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="bookings.html">Book Now</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Main section containing the available rooms and prices -->
-    <main>
-        <!-- Page heading and introduction -->
-        <h2>Our Rooms</h2>
-        <p>
-            Choose the perfect room for your stay in Polokwane.
-            All rooms include free WiFi, DSTV, air conditioning,
-            and daily housekeeping.
-        </p>
-
-        <!-- Section describing the Standard Room -->
-        <section>
-            <h3>Standard Room</h3>
-            <img src="images/room.jpg" alt="Standard Room" width="400">
-            <p><strong>Price:</strong> R650 per night</p>
-            <p><

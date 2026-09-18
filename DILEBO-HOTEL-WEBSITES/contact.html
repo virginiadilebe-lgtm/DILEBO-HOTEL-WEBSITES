@@ -3,131 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Dilebo Hotel</title>
+    <title>Contact Dilebo Hotel</title>
+    <meta name="description" content="Get in touch with Dilebo Hotel in Polokwane for reservations, enquiries, and guest support.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Dilebo Hotel</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="rooms.html">Rooms</a> | 
-            <a href="bookings.html">Book Now</a> | 
-            <a href="about.html">About</a> | 
-            <a href="contact.html">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand" aria-label="Dilebo Hotel brand">
+                <span class="brand-mark">D</span>
+                <div>
+                    <p class="eyebrow">Polokwane, Limpopo</p>
+                    <h1>Dilebo Hotel</h1>
+                </div>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="bookings.html">Book Now</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you! Get in touch for bookings, enquiries, or feedback.</p>
+    <main class="page-shell">
+        <section class="container page-hero">
+            <p class="eyebrow">Contact us</p>
+            <h2>We would love to hear from you</h2>
+            <p class="page-intro">Whether you need a room reservation, a question answered, or general assistance, our friendly team is ready to help.</p>
+        </section>
 
-        <h3>Our Details</h3>
-        <p><strong>Address:</strong> 123 Main Street, Polokwane, 0700, Limpopo</p>
-        <p><strong>Phone:</strong> 015 123 4567</p>
-        <p><strong>Email:</strong> info@dilebohotel.co.za</p>
-        <p><strong>Hours:</strong> 24 Hours, 7 Days a Week</p>
+        <section class="container contact-layout">
+            <div class="content-card contact-details">
+                <h3>Contact details</h3>
+                <p><strong>Address:</strong> 123 Main Street, Polokwane, 0700, Limpopo</p>
+                <p><strong>Phone:</strong> 015 123 4567</p>
+                <p><strong>Email:</strong> info@dilebohotel.co.za</p>
+                <p><strong>Hours:</strong> 24 Hours, 7 Days a Week</p>
+            </div>
 
-        <h3>Send Us a Message</h3>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <form class="booking-form contact-form" action="#" method="post">
+                <div class="field-grid single-column">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                    </div>
+                </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <section class="container map-block">
+            <h3>Find us</h3>
+            <iframe
+                src="https://www.google.com/maps?q=123+Main+Street,+Polokwane,+0700,+Limpopo&output=embed"
+                width="100%"
+                height="350"
+                style="border:0; border-radius: 18px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Dilebo Hotel Location Map">
+            </iframe>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 Dilebo Hotel | 123 Main Street, Polokwane | Tel: 015 123 4567 | Email: info@dilebohotel.co.za</p>
-    </footer>
-</body>
-</html>
-<!-- ...existing code... -->
-        <p><strong>Hours:</strong> 24 Hours, 7 Days a Week</p>
-
-        <h3>Find Us</h3>
-        <iframe
-            src="https://www.google.com/maps?q=123+Main+Street,+Polokwane,+0700,+Limpopo&output=embed"
-            width="100%"
-            height="350"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <h3>Send Us a Message</h3>
-<!-- ...existing code... -->
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Defines the character encoding used by the webpage -->
-    <meta charset="UTF-8">
-
-    <!-- Ensures the page displays correctly on phones, tablets, and computers -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Sets the title displayed in the browser tab -->
-    <title>Dilebo Hotel - Polokwane</title>
-
-    <!-- Connects this HTML file to the external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header section containing the hotel name and navigation menu -->
-    <header>
-        <h1>Dilebo Hotel</h1>
-
-        <!-- Navigation links to the other pages on the website -->
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="rooms.html">Rooms</a>
-            <a href="bookings.html">Book Now</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Main section containing the homepage content -->
-    <main>
-        <!-- Welcome heading for website visitors -->
-        <h2>Welcome to Dilebo Hotel</h2>
-
-        <!-- Displays an image of the hotel -->
-        <img
-            src="images/hotel.jpg"
-            alt="Dilebo Hotel Exterior"
-            width="100%"
-        >
-
-        <!-- Short introduction to the hotel's location -->
-        <p>Your home away from home in the heart of Polokwane, Limpopo.</p>
-
-        <!-- Description of the hotel's services -->
-        <p>
-            Experience comfort, luxury, and true African hospitality.
-            We offer clean rooms, free WiFi, and 24-hour service to make
-            your stay unforgettable.
-        </p>
-
-        <!-- Button linking visitors to the booking page -->
-        <a href="bookings.html">
-            <button type="button">Book Your Stay Today</button>
-        </a>
-    </main>
-
-    <!-- Footer containing copyright and contact information -->
-    <footer>
-        <p>
-            © 2026 Dilebo Hotel | 123 Main Street, Polokwane |
-            Tel: 015 123 4567 | Email: info@dilebohotel.co.za
-        </p>
     </footer>
 </body>
 </html>
