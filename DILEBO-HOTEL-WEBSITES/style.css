@@ -1,8 +1,8 @@
 :root {
-    --bg: #f6f1ea;
+    --bg: #eceaf6;
     --panel: #fffdf9;
     --primary: #1f2f2a;
-    --secondary: #8a6b3d;
+    --secondary: #3d8a67;
     --accent: #c9a869;
     --text: #222222;
     --muted: #5d5d5d;
@@ -21,7 +21,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #f7f4ef 0%, #efe8df 100%);
+    background: linear-gradient(180deg, #f0eff7 0%, #ebefdf 100%);
     color: var(--text);
     line-height: 1.6;
 }
