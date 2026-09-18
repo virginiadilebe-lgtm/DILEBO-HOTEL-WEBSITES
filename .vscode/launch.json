@@ -11,8 +11,8 @@
             "type": "editor-browser",
             "request": "launch",
             "name": "Launch Integrated Browser against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "url": "http://localhost:8080/DILEBO-HOTEL-WEBSITES/index.html",
+            "webRoot": "${workspaceFolder}/DILEBO-HOTEL-WEBSITES"
         }
     ]
 }
