@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooms & Rates - Dilebo Hotel</title>
-    <meta name="description" content="Explore the rooms and rates at Dilebo Hotel in Polokwane, Limpopo.">
+    <title>Dilebo Hotel | Rooms - Polokwane</title>
+    <meta name="description" content="Dilebo Hotel Polokwane affordable luxury from R650">
+    <meta name="keywords" content="hotel Polokwane, Limpopo accommodation, Dilebo Hotel">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,13 +15,13 @@
                 <span class="brand-mark">D</span>
                 <div>
                     <p class="eyebrow">Polokwane, Limpopo</p>
-                    <h1>Dilebo Hotel</h1>
+                    <p class="brand-name">Dilebo Hotel</p>
                 </div>
             </div>
 
             <nav aria-label="Main navigation">
                 <a href="index.html">Home</a>
-                <a href="rooms.html" class="active">Rooms</a>
+                <a href="rooms.html" class="active" aria-current="page">Rooms</a>
                 <a href="bookings.html">Book Now</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
@@ -29,15 +30,22 @@
     </header>
 
     <main class="page-shell">
-        <section class="container page-hero">
+        <section class="container page-hero fade-in">
             <p class="eyebrow">Stay options</p>
-            <h2>Rooms designed for rest and renewal</h2>
+            <h1>Rooms designed for rest and renewal</h1>
             <p class="page-intro">Choose the perfect room for your stay in Polokwane. Every room combines comfort, convenience, and warm hospitality with the essentials you need for a memorable visit.</p>
         </section>
 
-        <section class="container room-detail-grid">
-            <article class="room-detail-card">
-                <img src="images/room.jpg" alt="Standard room at Dilebo Hotel">
+        <section class="container room-search">
+            <h2>Find your room</h2>
+            <label for="roomSearch">Search rooms by name</label>
+            <input type="search" id="roomSearch" placeholder="e.g. Deluxe" autocomplete="off">
+            <p id="roomNoResults" class="no-results" hidden>No rooms match your search.</p>
+        </section>
+
+        <section class="container room-detail-grid" id="roomGrid">
+            <article class="room-detail-card" data-name="Standard Room">
+                <img class="gallery-img lightbox-img" src="images/dilebo-hotel-room-polokwane.jpg" alt="Standard room with double bed at Dilebo Hotel">
                 <div class="room-detail-content">
                     <h3>Standard Room</h3>
                     <p class="price">From R650 per night</p>
@@ -51,8 +59,8 @@
                 </div>
             </article>
 
-            <article class="room-detail-card">
-                <img src="images/room.jpg" alt="Deluxe room at Dilebo Hotel">
+            <article class="room-detail-card" data-name="Deluxe Room">
+                <img class="gallery-img lightbox-img" src="images/dilebo-hotel-room-polokwane.jpg" alt="Deluxe room with queen bed at Dilebo Hotel">
                 <div class="room-detail-content">
                     <h3>Deluxe Room</h3>
                     <p class="price">From R950 per night</p>
@@ -66,8 +74,8 @@
                 </div>
             </article>
 
-            <article class="room-detail-card">
-                <img src="images/room.jpg" alt="Family suite at Dilebo Hotel">
+            <article class="room-detail-card" data-name="Family Suite">
+                <img class="gallery-img lightbox-img" src="images/dilebo-hotel-room-polokwane.jpg" alt="Family suite with two queen beds at Dilebo Hotel">
                 <div class="room-detail-content">
                     <h3>Family Suite</h3>
                     <p class="price">From R1450 per night</p>
@@ -82,17 +90,32 @@
             </article>
         </section>
 
+        <section class="container gallery-section">
+            <h2>Hotel gallery</h2>
+            <p class="page-intro">Click any photo to view it larger.</p>
+            <div class="gallery-grid">
+                <img class="gallery-img lightbox-img" src="images/dilebo-hotel-exterior-polokwane.jpeg" alt="Dilebo Hotel building exterior in Polokwane">
+                <img class="gallery-img lightbox-img" src="images/dilebo-hotel-lobby-polokwane.png" alt="Dilebo Hotel lobby and reception area">
+                <img class="gallery-img lightbox-img" src="images/dilebo-hotel-room-polokwane.jpg" alt="Guest room interior at Dilebo Hotel">
+            </div>
+        </section>
+
         <section class="container booking-cta-box">
             <div>
                 <p class="eyebrow">Need a reservation?</p>
-                <h3>Book your preferred room today.</h3>
+                <h2>Book your preferred room today.</h2>
             </div>
             <a class="btn btn-primary" href="bookings.html">Book a Room</a>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Dilebo Hotel | 123 Main Street, Polokwane | Tel: 015 123 4567 | Email: info@dilebohotel.co.za</p>
+        <p>© 2026 Dilebo Hotel | 123 Main Street, Polokwane, 0700, Limpopo | Tel: 015 123 4567</p>
+        <p class="footer-links">
+            <a href="index.html">Home</a> · <a href="rooms.html">Rooms</a> · <a href="bookings.html">Book Now</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a>
+        </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

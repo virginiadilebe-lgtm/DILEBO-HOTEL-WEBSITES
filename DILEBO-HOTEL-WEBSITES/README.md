@@ -10,7 +10,7 @@ A responsive multi-page hotel website for Dilebo Hotel in Polokwane, Limpopo. Th
 
 ## Overview
 
-The Dilebo Hotel Website is a responsive, multi-page front-end website for a hotel located in Polokwane, Limpopo. It gives prospective guests a clear place to learn about the hotel, view room options and prices, find information about its history and facilities, and get in touch. The site uses a consistent visual style and navigation across its pages so visitors can move easily between hotel information and enquiry options. It is built with HTML and CSS as a static website; it does not include a back-end booking system or process reservations online.
+The Dilebo Hotel Website is a responsive, multi-page front-end website for a hotel located in Polokwane, Limpopo. It gives prospective guests a clear place to learn about the hotel, view room options and prices, find information about its history and facilities, and get in touch. The site uses a consistent visual style and navigation across its pages so visitors can move easily between hotel information and enquiry options. It is built with HTML, CSS and JavaScript as a static website; it does not include a back-end booking system, so enquiries are validated in the browser and contact messages open the visitor's email app.
 
 ## Website Goals and Objectives
 
@@ -29,8 +29,16 @@ The Dilebo Hotel Website is a responsive, multi-page front-end website for a hot
 - About page presenting the hotel’s history and facilities.
 - Contact page with contact information, a message form interface, and an embedded map.
 - Shared CSS styling for a consistent look and responsive layouts.
+- Facilities accordion on the About page.
+- Lightbox image gallery on the Rooms page.
+- Room search filter (by name) on the Rooms page.
+- Fade-in animation on hero and page headers.
+- Booking enquiry form with JavaScript validation (email format, check-out after check-in, guests 1-4) and a total cost alert (nights x price: Standard R650, Deluxe R950, Family Suite R1450).
+- Contact form with validation that compiles a `mailto:info@dilebohotel.co.za` message.
+- Interactive Leaflet map on the Contact page.
+- SEO: unique titles, descriptions, keywords, H1-H3 hierarchy, descriptive image names and alt text, `robots.txt` and `sitemap.xml`.
 
-Forms are front-end interfaces only. Submitting them does not create a reservation or send a message to the hotel because this project has no back-end service.
+Forms have no back-end: the booking enquiry shows a cost estimate and the contact form opens the visitor's email client.
 
 ## Project Phases
 
@@ -70,9 +78,11 @@ The booking and contact forms are front-end interfaces only. Connecting them to 
 - `index.html` — Home page
 - `rooms.html` — Room options and pricing
 - `bookings.html` — Booking form
-- `about.html` — Hotel history and facilities
-- `contact.html` — Contact information and message form
+- `about.html` — Hotel history, mission and facilities accordion
+- `contact.html` — Contact information, message form and map
 - `style.css` — Full website styling
+- `script.js` — Interactivity, form validation and map
+- `robots.txt`, `sitemap.xml` — SEO files
 - `images/` — Hotel and room images
 
 ## Sitemap
@@ -83,13 +93,15 @@ Home (index.html)
 ├── Book Now (bookings.html)
 ├── About (about.html)
 └── Contact (contact.html)
-	└── Google Map
+	└── Leaflet Map
 
 Shared resources
 ├── style.css
+├── script.js
+├── robots.txt
+├── sitemap.xml
 └── images/
-```87654
-
+```
 
 Each main page links to the other pages through the shared navigation menu.
 
@@ -103,12 +115,15 @@ This log tracks submitted milestones and project improvements. Add a new dated e
 | 18 September | Part 2 submitted: implemented the five-page website, shared styling and navigation, page content, enquiry forms, and map. |
 | 16 October 2026 | Expanded README documentation with student information, project overview, goals, project phases, sitemap, and this changelog. |
 | 2 November | Part 3 planned: test and refine the site, resolve issues, and prepare the final subission. |
+| 2 November 2026 | Part 3 final: fixed nav, fixed booking form, unified mission/footer, added JS and SEO |
+| 2 Nov 2026 | Part 3 final: fixed Part 2, added JS accordion lightbox search map validation cost calc, SEO tags, robots sitemap |
 
 ## Technologies Used
 
 - HTML5
 - CSS3
-- Google Maps embed
+- JavaScript (vanilla)
+- Leaflet and OpenStreetMap
 
 ## How to Run
 
@@ -123,7 +138,9 @@ These documentation sources cover the main technologies and techniques used in t
 - MDN Web Docs, [Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) — HTML page structure and semantic elements.
 - MDN Web Docs, [CSS styling basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics) — CSS selectors, properties, and page styling.
 - MDN Web Docs, [Responsive design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) — layouts that adapt to different screen sizes.
-- Google for Developers, [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started) — embedding a map in a web page.
+- Google for Developers, [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started) — embedding a map in a web page (used as the no-JavaScript fallback).
+- MDN Web Docs, [JavaScript guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) — DOM events, form validation and the `mailto:` scheme.
+- Leaflet, [Quick Start Guide](https://leafletjs.com/examples/quick-start/) — interactive map.
 
 ## Contact Information
 

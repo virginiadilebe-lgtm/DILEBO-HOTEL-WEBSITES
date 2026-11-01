@@ -78,7 +78,7 @@ img {
     box-shadow: 0 8px 18px rgba(200, 169, 106, 0.35);
 }
 
-.brand h1 {
+.brand-name {
     margin: 0;
     font-size: clamp(1.5rem, 2.2vw, 2.3rem);
     color: var(--accent);
@@ -137,15 +137,15 @@ main {
     align-items: center;
 }
 
-.hero-copy h2,
-.section-heading h3,
-.cta-box h3 {
+.hero-copy h1,
+.section-heading h2,
+.cta-box h2 {
     margin: 0 0 1rem;
     color: var(--primary-deep);
     line-height: 1.15;
 }
 
-.hero-copy h2 {
+.hero-copy h1 {
     font-size: clamp(2.5rem, 5vw, 4.1rem);
 }
 
@@ -236,7 +236,7 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.section-heading h3 {
+.section-heading h2 {
     font-size: clamp(2rem, 3vw, 2.8rem);
 }
 
@@ -273,8 +273,8 @@ main {
     margin-bottom: 0.8rem;
 }
 
-.feature-card h4,
-.room-content h4 {
+.feature-card h3,
+.room-content h3 {
     margin: 0 0 0.5rem;
     color: var(--primary-deep);
     font-size: 1.4rem;
@@ -327,7 +327,7 @@ main {
     color: var(--accent-soft);
 }
 
-.cta-box h3 {
+.cta-box h2 {
     color: var(--white);
     font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
@@ -391,15 +391,15 @@ footer p {
     margin-bottom: 2rem;
 }
 
-.page-hero h2,
+.page-hero h1,
 .page-hero .eyebrow,
-.booking-page-header h2,
+.booking-page-header h1,
 .booking-page-header .eyebrow {
     margin-left: 0;
 }
 
-.page-hero h2,
-.booking-page-header h2 {
+.page-hero h1,
+.booking-page-header h1 {
     font-size: clamp(2.2rem, 4vw, 3.3rem);
     line-height: 1.1;
     color: var(--primary-deep);
@@ -432,9 +432,9 @@ footer p {
     box-shadow: 0 12px 24px rgba(16, 36, 30, 0.06);
 }
 
-.content-card h3,
-.info-panel h3,
-.map-block h3 {
+.content-card h2,
+.info-panel h2,
+.map-block h2 {
     margin-top: 0;
     margin-bottom: 0.8rem;
     color: var(--primary-deep);
@@ -521,8 +521,8 @@ footer p {
     color: var(--accent-soft);
 }
 
-.booking-cta-box h3,
-.cta-box h3 {
+.booking-cta-box h2,
+.cta-box h2 {
     margin: 0;
     font-size: clamp(1.8rem, 3vw, 2.4rem);
     color: var(--white);
@@ -613,5 +613,265 @@ footer p {
 
     .page-shell {
         padding-top: 2rem;
+    }
+}
+
+/* Part 3: shared additions */
+h2.form-title {
+    margin: 0 0 1rem;
+    color: var(--primary-deep);
+    font-size: 1.8rem;
+}
+
+.text-link {
+    color: var(--secondary);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: var(--accent);
+}
+
+.error {
+    display: block;
+    min-height: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #b3261e;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.booking-form input.invalid,
+.booking-form select.invalid,
+.booking-form textarea.invalid {
+    border-color: #b3261e;
+}
+
+.booking-form select {
+    appearance: auto;
+}
+
+/* Fade-in animation (only when JS is available) */
+.js .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.js .fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.js .fade-delay {
+    transition-delay: 0.25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js .fade-in {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Room search */
+.room-search {
+    margin-bottom: 1.5rem;
+}
+
+.room-search h2,
+.gallery-section h2 {
+    margin: 0 0 0.8rem;
+    color: var(--primary-deep);
+    font-size: 1.8rem;
+}
+
+.room-search label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.room-search input {
+    width: 100%;
+    max-width: 420px;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(29, 49, 43, 0.2);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.no-results {
+    color: #b3261e;
+    font-weight: 600;
+}
+
+/* Gallery + lightbox */
+.gallery-section {
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.gallery-img {
+    cursor: zoom-in;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-img:hover,
+.gallery-img:focus {
+    transform: scale(1.02);
+    box-shadow: 0 10px 22px rgba(16, 36, 30, 0.25);
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    background: rgba(16, 36, 30, 0.9);
+}
+
+.lightbox.open {
+    display: flex;
+    animation: lightbox-fade 0.25s ease;
+}
+
+.lightbox img {
+    max-width: min(92vw, 1100px);
+    max-height: 80vh;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-caption {
+    margin: 0;
+    color: var(--accent-soft);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--primary-deep);
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@keyframes lightbox-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Accordion */
+.accordion {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.accordion-item {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(29, 49, 43, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(16, 36, 30, 0.05);
+}
+
+.accordion-item h3 {
+    margin: 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.1rem 1.3rem;
+    border: 0;
+    background: transparent;
+    color: var(--primary-deep);
+    font: inherit;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion-header::after {
+    content: "+";
+    color: var(--accent);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.accordion-header[aria-expanded="true"] {
+    background: rgba(200, 169, 106, 0.16);
+}
+
+.accordion-header[aria-expanded="true"]::after {
+    content: "\2212";
+}
+
+.accordion-header:hover,
+.accordion-header:focus-visible {
+    background: rgba(200, 169, 106, 0.22);
+}
+
+.accordion-panel {
+    padding: 0 1.3rem 1.1rem;
+    color: var(--muted);
+}
+
+.accordion-panel p {
+    margin: 0.6rem 0 0;
+}
+
+.accordion-panel:not([hidden]) {
+    animation: lightbox-fade 0.3s ease;
+}
+
+/* Leaflet map */
+.map,
+#map {
+    height: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
 }
