@@ -88,7 +88,8 @@ Home (index.html)
 Shared resources
 ├── style.css
 └── images/
-```
+```87654
+
 
 Each main page links to the other pages through the shared navigation menu.
 
@@ -101,7 +102,7 @@ This log tracks submitted milestones and project improvements. Add a new dated e
 | 14 August | Part 1 submitted: established the website concept, goals, and initial structure. |
 | 18 September | Part 2 submitted: implemented the five-page website, shared styling and navigation, page content, enquiry forms, and map. |
 | 16 October 2026 | Expanded README documentation with student information, project overview, goals, project phases, sitemap, and this changelog. |
-| 2 November | Part 3 planned: test and refine the site, resolve issues, and prepare the final submission. |
+| 2 November | Part 3 planned: test and refine the site, resolve issues, and prepare the final subission. |
 
 ## Technologies Used
 
